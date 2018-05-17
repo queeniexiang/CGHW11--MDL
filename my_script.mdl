@@ -1,0 +1,47 @@
+//Center Atom
+push
+move 250 300 0
+rotate z -30
+sphere 20 -35 30 100
+pop
+//First Ring
+push
+rotate x 90
+move -5 200 -250 
+torus 250 200 0 30 220
+pop
+//Second Ring
+push
+rotate y -90
+rotate z -43
+move 200 300 -250
+move 0 270 0
+rotate x 50
+move -370 -290 150
+torus 250 200 0 30 270
+pop
+//Third Ring
+push
+rotate y -90
+rotate z 43
+move 200 300 -550
+move -550 240 50
+rotate x -50
+rotate y -10
+move -100 -400 150
+torus 250 200 0 30 270
+pop
+//Electrons
+push
+sphere 460 250 0 45
+pop
+push
+rotate y -30
+move 40 0 0 
+sphere 300 100 40 45
+pop
+push
+rotate y 30
+sphere 70 380 0 45
+display
+save atom.png
